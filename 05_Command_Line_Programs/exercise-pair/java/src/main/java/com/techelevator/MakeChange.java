@@ -22,7 +22,7 @@ public class MakeChange {
 			String startingBill = input.nextLine();
 			// grab amount tendered
 
-			System.out.println("Enter dollar amount given.");
+			System.out.println("Enter amount paid.");
 			String amountTendered = input.nextLine();
 
 			double total = 0.0;
