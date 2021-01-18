@@ -24,15 +24,18 @@ public class MartianWeight {
 		System.out.println("Welcome to the Mars counter!");
 		Scanner input = new Scanner(System.in);
 		//grab earth weight
+
 		System.out.println("Enter your earth weights separated by spaces:");
 		String wEGrab = input.nextLine();
 		//make an array
+
 		String[] wEArray = wEGrab.split(" ");
 		//convert to doubles & math
+
 		for (int i = 0; i < wEArray.length; i++){
 			double wEDouble = Double.parseDouble(wEArray[i]);
 			double wMDouble = wEDouble * 0.378;
-			System.out.println(wEDouble + "lbs on earth, is "+ wMDouble + "lbs on mars.");
+			System.out.format("%.2f lbs on earth, is %.2f lbs on mars\n", wEDouble ,wMDouble);
 		}
 		//return result
 
